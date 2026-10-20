@@ -1,0 +1,9 @@
+{
+"manifest_version":3,
+"name": "rwd na pwa",
+"version": "1.0",
+"description": "ma dzialac na telefonie",
+"icons": {
+  "pwa": "pwa.png"
+}
+}
