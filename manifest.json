@@ -1,9 +1,11 @@
 {
-"manifest_version":3,
-"name": "rwd na pwa",
-"version": "1.0",
-"description": "ma dzialac na telefonie",
-"icons": {
-  "pwa": "pwa.png"
-}
+  "name": "rwd na pwa",
+  "short_name": "rwd",
+  "description": "Ma działać na telefonie",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": 
+    {
+      "src": "./pwa.png",
+    }
 }
