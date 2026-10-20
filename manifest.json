@@ -3,7 +3,6 @@
   "short_name": "rwd",
   "description": "Ma działać na telefonie",
   "background_color": "#ffffff",
-  "theme_color": "#2563eb",
   "icons": 
     {
       "src": "./pwa.png",
