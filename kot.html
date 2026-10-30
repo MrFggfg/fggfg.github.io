@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Odczyt pliku txt</title>
+</head>
+<body>
+
+    <h1>Zawartość pliku:</h1>
+
+    <script>
+       fetch('tekst.txt')
+  .then(function(response) {
+     return response.text();
+  })
+  .then(function(data) {
+    myDisplayer(data);
+  });
+    </script>
+
+</body>
+</html>
