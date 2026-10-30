@@ -15,7 +15,8 @@
 <body>
 
     <h1>Wybiez plik:</h1>
-
+    <input type="file" />
+    <div class="output"></div>
     <script>
 const fileInput = document.querySelector("input[type=file]");
 const output = document.querySelector(".output");
@@ -28,7 +29,5 @@ fileInput.addEventListener("change", async () => {
   }
 });
     </script>
-<input type="file" />
-<div class="output"></div>
 </body>
 </html>
