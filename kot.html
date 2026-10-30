@@ -7,15 +7,20 @@
 <body>
 
     <h1>Zawartość pliku:</h1>
+    <pre id="widok">Ładowanie...</pre>
 
     <script>
-       fetch('tekst.txt')
-  .then(function(response) {
-     return response.text();
-  })
-  .then(function(data) {
-    myDisplayer(data);
-  });
+        function myDisplayer(someText) {
+            document.getElementById("widok").textContent = someText;
+        }
+
+        fetch('tekst.txt')
+            .then(function(response) {
+                return response.text();
+            })
+            .then(function(data) {
+                myDisplayer(data);
+            });
     </script>
 
 </body>
