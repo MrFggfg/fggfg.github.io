@@ -10,17 +10,11 @@
     <pre id="widok">Ładowanie...</pre>
 
     <script>
-        function myDisplayer(someText) {
-            document.getElementById("widok").textContent = someText;
-        }
-
-        fetch('tekst.txt')
-            .then(function(response) {
-                return response.text();
-            })
-            .then(function(data) {
-                myDisplayer(data);
-            });
+fetch('tekst.txt')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('widok').textContent = data;
+    });
     </script>
 
 </body>
