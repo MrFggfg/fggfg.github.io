@@ -7,7 +7,6 @@
         window.addEventListener("devicemotion", e => {
             const acc = e.accelerationIncludingGravity;
             document.querySelector("#out").innerText = 
-            `X: ${acc.x} | Y: ${acc.y} | Z: ${acc.z}`});
-    </script>
+            `X: ${acc.x?.toFixed(1)} | Y: ${acc.y?.toFixed(1)} | Z: ${acc.z?.toFixed(1)}`;    </script>
 </body>
 </html>
