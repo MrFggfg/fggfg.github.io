@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="pl">
+<body>
+    <div id="out"></div>
+
+    <script>
+        window.addEventListener("deviceorientation", e => {
+            document.querySelector("#out").innerText = 
+                `Alpha: ${Math.round(e.alpha)}° | Beta: ${Math.round(e.beta)}° | Gamma: ${Math.round(e.gamma)}°`;
+        });
+    </script>
+</body>
+</html>
