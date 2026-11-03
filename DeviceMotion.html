@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="pl">
+<body>
+    <div id="out"></div>
+
+    <script>
+        window.addEventListener("devicemotion", e => {
+            const acc = e.accelerationIncludingGravity;
+            document.querySelector("#out").innerText = 
+            `X: ${acc.x} | Y: ${acc.y} | Z: ${acc.z}`});
+    </script>
+</body>
+</html>
