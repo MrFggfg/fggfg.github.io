@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pl">
+<body>
+    <button id="btn">Pokaż pozycję</button>
+    <div id="out"></div>
+
+    <script>
+        document.querySelector("#btn").addEventListener("click", () => {
+            navigator.geolocation.getCurrentPosition(pos => {
+                document.querySelector("#out").innerText = 
+                    `Szerokość: ${pos.coords.latitude}, Długość: ${pos.coords.longitude}`;
+            });
+        });
+    </script>
+</body>
+</html>
