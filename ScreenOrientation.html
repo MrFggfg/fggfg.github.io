@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pl">
+<body>
+    <h1 id="out"></h1>
+
+    <script>
+        const update = () => {
+            const isPortrait = screen.orientation.type.includes("portrait");
+            document.querySelector("#out").innerText = isPortrait ? "Pionowo" : "Poziomo";
+        };
+
+        screen.orientation.addEventListener("change", update);
+        update();
+    </script>
+</body>
+</html>
